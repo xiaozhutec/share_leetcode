@@ -37,30 +37,30 @@ class Solution(object):
 
 
 
-    def levelOrder_lc(self, root):
-        """
-        题目要求：需要将每一行元素放置到一个list中去
-        注意：将每一层单独放置时候的一个技巧点:
-        每一层遍历的时候，让孩子结点临时入队，之后queue = tmp_queue，下一层进行新的一个queue的遍历，循环进行
-        :param root:
-        :return:
-        """
-        res = []
-        if not root:
-            return res
-        queue = [root]
-        while queue:
-            level_queue = []      # 临时记录每一层结点
-            level_res = []        # 临时记录每一行的结点值
-            for node in queue:
-                level_res.append(node.val)
-                if node.left:
-                    level_queue.append(node.left)
-                if node.right:
-                    level_queue.append(node.right)
-            queue = level_queue
-            res.append(level_res)
+def levelOrder_lc(self, root):
+    """
+    题目要求：需要将每一行元素放置到一个list中去
+    注意：将每一层单独放置时候的一个技巧点:
+    每一层遍历的时候，让孩子结点临时入队，之后queue = tmp_queue，下一层进行新的一个queue的遍历，循环进行
+    :param root:
+    :return:
+    """
+    res = []
+    if not root:
         return res
+    queue = [root]
+    while queue:
+        level_queue = []      # 临时记录每一层结点
+        level_res = []        # 临时记录每一行的结点值
+        for node in queue:
+            level_res.append(node.val)
+            if node.left:
+                level_queue.append(node.left)
+            if node.right:
+                level_queue.append(node.right)
+        queue = level_queue
+        res.append(level_res)
+    return res
 
 
 if __name__ == "__main__":
