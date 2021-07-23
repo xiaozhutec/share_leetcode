@@ -1,6 +1,8 @@
 # -*- coding:utf-8 -*-
 # !/usr/bin/env python
 
+import collections
+
 # 树结点类
 class TreeNode(object):
     def __init__(self, val, left=None, right=None):
@@ -10,7 +12,27 @@ class TreeNode(object):
 
 
 class Solution(object):
+
     def levelOrder(self, root):
+        res = []
+        if not root:
+            return res
+        queue = collections.deque()
+        queue.append(root)
+
+        while queue:
+            node = queue.pop()
+            res.append(node.val)
+            if node.left:
+                queue.appendleft(node.left)
+            if node.right:
+                queue.appendleft(node.right)
+
+        return res
+
+
+
+    def levelOrder_lc(self, root):
         """
         题目要求：需要将每一行元素放置到一个list中去
         注意：将每一层单独放置时候的一个技巧点:
@@ -62,3 +84,4 @@ if __name__ == "__main__":
 
     s = Solution()
     print(s.levelOrder(root))
+    print(s.levelOrder_lc(root))
