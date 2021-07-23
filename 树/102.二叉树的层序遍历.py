@@ -14,6 +14,11 @@ class TreeNode(object):
 class Solution(object):
 
     def levelOrder(self, root):
+        """
+        传统遍历的打印方式
+        :param root:
+        :return:
+        """
         res = []
         if not root:
             return res
@@ -45,16 +50,16 @@ class Solution(object):
             return res
         queue = [root]
         while queue:
-            tmp_queue = []      # 临时记录每一层结点
-            tmp_res = []        # 临时记录每一行的结点值
+            level_queue = []      # 临时记录每一层结点
+            level_res = []        # 临时记录每一行的结点值
             for node in queue:
-                tmp_res.append(node.val)
+                level_res.append(node.val)
                 if node.left:
-                    tmp_queue.append(node.left)
+                    level_queue.append(node.left)
                 if node.right:
-                    tmp_queue.append(node.right)
-            queue = tmp_queue
-            res.append(tmp_res)
+                    level_queue.append(node.right)
+            queue = level_queue
+            res.append(level_res)
         return res
 
 

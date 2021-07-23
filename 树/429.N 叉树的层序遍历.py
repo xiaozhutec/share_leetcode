@@ -32,15 +32,15 @@ class Solution(object):
         if not root:
             return res
         while queue:
-            tmp_queue = []  # 临时保存每一层结点元素便于下一次进行迭代
-            tmp_res = []    # 临时保存每一层结点值
+            level_queue = []  # 临时保存每一层结点元素便于下一次进行迭代
+            level_res = []    # 临时保存每一层结点值
             for node in queue:
-                tmp_res.append(node.val)
+                level_res.append(node.val)
                 if node.children:
                     for child_node in node.children:
-                        tmp_queue.append(child_node)
-            queue = tmp_queue
-            res.append(tmp_res)
+                        level_queue.append(child_node)
+            queue = level_queue
+            res.append(level_res)
         return res
 
 
