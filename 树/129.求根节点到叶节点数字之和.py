@@ -51,11 +51,6 @@ class Solution(object):
         return sum
 
 
-
-
-
-
-
 if __name__ == "__main__":
     # 新建节点
     root = TreeNode(5)

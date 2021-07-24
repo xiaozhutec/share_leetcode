@@ -33,7 +33,7 @@ class Solution(object):
         if not root:
             return ""
         queue = collections.deque()
-        queue.appendleft((root,chr(root.val + ord('a'))))
+        queue.appendleft((root, chr(root.val + ord('a'))))
         while queue:
             node, node_val = queue.pop()
             if not node.left and not node.right:
@@ -43,8 +43,6 @@ class Solution(object):
             if node.right:
                 queue.appendleft((node.right, chr(node.right.val + ord('a')) + node_val))
         return min(res)
-
-
 
 
 if __name__ == "__main__":

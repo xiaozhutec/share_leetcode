@@ -24,6 +24,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Demo/test.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/datas">
           <value>
             <Attribute>
@@ -88,6 +95,13 @@
           </value>
         </entry>
         <entry key="/树/124.二叉树的最大路径和.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/树/129.求根节点到叶节点数字之和.py">
           <value>
             <Attribute>
               <option name="separator" value="," />

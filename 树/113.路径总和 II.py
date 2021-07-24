@@ -61,6 +61,12 @@ class Solution(object):
         return res
 
     def pathSum_bfs_s(self, root, targetSum):
+        """
+        运用了 Collections 包，执行效率较高
+        :param root:
+        :param targetSum:
+        :return:
+        """
         res = []
         if not root:
             return []
