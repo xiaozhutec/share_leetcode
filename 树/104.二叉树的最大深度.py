@@ -42,6 +42,7 @@ class Solution(object):
 
         return node_depth
 
+
 if __name__ == "__main__":
     # 新建节点
     root = TreeNode('A')
