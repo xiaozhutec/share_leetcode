@@ -10,19 +10,19 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
+
 class Solution(object):
     def levelOrder(self, root):
         res = []
         queue = collections.deque()
         queue.appendleft((root, root.val, root.val))
-
         while queue:
             node, node_path, node_val = queue.pop()
             res.append((node, node_path, node_val))
             if node.left:
-                queue.appendleft(node.left)
+                queue.appendleft((node.left, node_path+str(node.left), node_val+node.left.val))
             if node.right:
-                queue.appendleft(node.right)
+                queue.appendleft((node.right, node_path+str(node.right), node_val+node.right.val))
         return res
 
 
