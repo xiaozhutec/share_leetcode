@@ -13,46 +13,31 @@ class TreeNode(object):
 
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
-        """
-        四种情况
-        1.无左孩子 and 无右孩子，直接返回根结点
-        2.无左孩子 and 有右孩子，直接返回根结点
-        3.有左孩子 and 无右孩子，直接返回根结点
-        4.有左孩子 and 有右孩子，继续递归遍历
-
-        :type root: TreeNode
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: TreeNode
-        """
-
-        if not root or not root.left or not root.right:
-            return root
-        left = self.lowestCommonAncestor(root.left, p, q)
-        right = self.lowestCommonAncestor(root.right, p, q)
-        if not left: return right
-        if not right: return left
-        return root
+        if p.val < root.val and q.val < root.val:
+            return self.lowestCommonAncestor(root.left, p, q)
+        if p.val > root.val and q.val > root.val:
+            return self.lowestCommonAncestor(root.right, p, q)
+        return root.val
 
 
 if __name__ == "__main__":
     # 新建节点
-    root = TreeNode(5)
-    node_B = TreeNode(3)
-    node_C = TreeNode(8)
+    root = TreeNode(9)
+    node_B = TreeNode(8)
+    node_C = TreeNode(18)
     node_D = TreeNode(1)
-    node_E = TreeNode(4)
-    node_F = TreeNode(6)
-    node_G = TreeNode(9)
+    node_E = TreeNode(9)
+    node_F = TreeNode(11)
+    node_G = TreeNode(20)
     node_H = TreeNode(0)
     node_I = TreeNode(2)
     node_J = TreeNode(3)
     # 构建二叉树
-    #        5
+    #        9
     #      /   \
-    #     3     8
+    #     8     18
     #    / \   / \
-    #   1   4 6   9
+    #   1   9 11  20
     #  / \
     # 0   2
     #      \

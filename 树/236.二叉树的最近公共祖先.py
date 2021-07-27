@@ -26,7 +26,7 @@ class Solution(object):
         :rtype: TreeNode
         """
 
-        if not root or not root.left or not root.right:
+        if not root or root == p or root == q:
             return root
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)

@@ -13,14 +13,27 @@ class TreeNode(object):
 class Solution(object):
 
     def findDuplicateSubtrees(self, root):
-        pass
+        d = collections.defaultdict(list)
+
+        def find(root):
+            if not root:
+                return ''
+            left_chlid = find(root.left)
+            right_chlid = find(root.right)
+            s = ' '.join((str(root.val), left_chlid, right_chlid))
+            d[s].append(root)
+            return s
+
+        find(root)
+        return [l[0].val for l in d.values() if len(l) > 1]
+
 
 if __name__ == "__main__":
     # 新建节点
     root = TreeNode(5)
     node_B = TreeNode(3)
     node_C = TreeNode(2)
-    node_D = TreeNode(1)
+    node_D = TreeNode(3)
     node_E = TreeNode(2)
     node_F = TreeNode(4)
     node_G = TreeNode(9)
@@ -32,7 +45,7 @@ if __name__ == "__main__":
     #      /   \
     #     3     2
     #    / \   / \
-    #   1   2 4   9
+    #   3   2 4   9
     #  / \
     # 7   2
     #      \

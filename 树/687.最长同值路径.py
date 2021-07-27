@@ -27,7 +27,7 @@ class Solution(object):
             if root.right and root.right.val == root.val:
                 right_tag = right_len + 1
             print("length", self.length, "node:", root.val, "left_tag:", left_tag, "right_tag:", right_tag)
-            # max(最大程度, 左子树最大长度+右子树最大长度)
+            # max(最大长度, 左子树最大长度+右子树最大长度)
             self.length = max(self.length, left_tag + right_tag)
             return max(left_tag, right_tag)
 

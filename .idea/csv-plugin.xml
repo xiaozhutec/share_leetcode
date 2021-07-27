@@ -115,6 +115,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/树/235.二叉搜索树的最近公共祖先.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/树/236.二叉树的最近公共祖先.py">
           <value>
             <Attribute>
@@ -161,6 +168,13 @@
           <value>
             <Attribute>
               <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/树/652.寻找重复的子树.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
