@@ -47,13 +47,6 @@ class Solution(object):
         return dp1
 
 
-
-
-
-
-
-
-
 if __name__ == '__main__':
     s = Solution()
     print(s.tribonacci(4))
