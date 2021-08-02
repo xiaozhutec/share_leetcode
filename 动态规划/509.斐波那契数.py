@@ -2,7 +2,7 @@
 # !/usr/bin/env python
 
 class Solution(object):
-    def tribonacci(self, n):
+    def fib(self, n):
         """
         递归处理
         :param n:
@@ -11,9 +11,9 @@ class Solution(object):
         # print('计算 F(%d)' % n)
         if n < 2:
             return n
-        return self.tribonacci(n-1) + self.tribonacci(n-2)
+        return self.fib(n-1) + self.fib(n-2)
 
-    def tribonacci_dp(self, n):
+    def fib_dp(self, n):
         """
         动态规划思想处理
         :param n:
@@ -31,7 +31,7 @@ class Solution(object):
             dp[i] = dp[i-1] + dp[i-2]
         return dp[-1]
 
-    def tribonacci_dp_opt(self, n):
+    def fib_dp_opt(self, n):
         """
         优化方案：空间上的优化，不使用动态数组，仅仅使用两个变量就可
         :param n:
