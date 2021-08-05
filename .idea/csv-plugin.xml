@@ -66,6 +66,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/动态规划/198.打家劫舍.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/213.打家劫舍 II.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/337.打家劫舍 III.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/509.斐波那契数.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/动态规划/63.不同路径 II.py">
           <value>
             <Attribute>

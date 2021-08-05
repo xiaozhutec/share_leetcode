@@ -8,7 +8,7 @@ class Solution(object):
         :param n:
         :return:
         """
-        # print('计算 F(%d)' % n)
+        print('计算 F(%d)' % n)
         if n < 2:
             return n
         return self.fib(n-1) + self.fib(n-2)
@@ -49,6 +49,6 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.tribonacci(4))
-    print(s.tribonacci_dp(4))
-    print(s.tribonacci_dp_opt(4))
+    print(s.fib(4))
+    print(s.fib_dp(4))
+    print(s.fib_dp_opt(4))

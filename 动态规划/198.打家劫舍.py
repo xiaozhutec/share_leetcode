@@ -18,7 +18,6 @@ class Solution(object):
         return dp[-1]
 
 
-
 if __name__ == '__main__':
     s = Solution()
     print(s.rob([1,2,3,1]))
