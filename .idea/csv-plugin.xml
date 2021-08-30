@@ -122,6 +122,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/动态规划/42.接雨水.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/动态规划/5.最长回文子串.py">
           <value>
             <Attribute>
