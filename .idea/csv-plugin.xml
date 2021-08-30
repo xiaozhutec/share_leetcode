@@ -73,6 +73,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/动态规划/121.买卖股票的最佳时机.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/122.买卖股票的最佳时机 II.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/123.买卖股票的最佳时机 III.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/188.买卖股票的最佳时机 IV.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/动态规划/198.打家劫舍.py">
           <value>
             <Attribute>
@@ -112,6 +140,13 @@
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/动态规划/70.爬楼梯.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
             </Attribute>
           </value>
         </entry>
