@@ -157,6 +157,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/字符串/test.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/树/102.二叉树的层序遍历.py">
           <value>
             <Attribute>
