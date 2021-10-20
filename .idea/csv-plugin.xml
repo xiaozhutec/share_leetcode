@@ -157,6 +157,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/字符串/239.滑动窗口最大值.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/3.无重复字符的最长子串.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/567.字符串的排列.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/76.最小覆盖子串.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/字符串/test.py">
           <value>
             <Attribute>
