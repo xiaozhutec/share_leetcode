@@ -10,6 +10,7 @@ class Solution(object):
         """
         dict_s1 = collections.Counter(s)
         dict_s2 = collections.Counter(t)
+        print(dict_s2)
         return dict_s1 == dict_s2
 
     def isAnagram1(self, s, t):
