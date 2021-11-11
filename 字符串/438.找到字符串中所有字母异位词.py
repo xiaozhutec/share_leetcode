@@ -29,7 +29,7 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.findAnagrams("abab", "ab"))
+    print(s.findAnagrams("cbaebabacd", "abc"))
 
 # "cbaebabacd", "abc"
 # "abab", "ab"

@@ -8,10 +8,7 @@ class Solution(object):
         字典做词频统计即可
         这里直接使用 API
         """
-        dict_s1 = collections.Counter(s)
-        dict_s2 = collections.Counter(t)
-        print(dict_s2)
-        return dict_s1 == dict_s2
+        return collections.Counter(s) == collections.Counter(t)
 
     def isAnagram1(self, s, t):
         """
