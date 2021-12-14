@@ -192,6 +192,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/字符串/300.最长递增子序列.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/字符串/344.反转字符串.py">
           <value>
             <Attribute>
@@ -214,6 +221,13 @@
           </value>
         </entry>
         <entry key="/字符串/567.字符串的排列.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/673.最长递增子序列的个数.py">
           <value>
             <Attribute>
               <option name="separator" value=":" />
