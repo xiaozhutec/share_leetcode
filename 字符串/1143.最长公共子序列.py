@@ -20,7 +20,7 @@ class Solution(object):
             dp[0][i] = 1 if dp[0][i-1] == 1 else int(text1[i] == text2[0])
         for j in range(1, size2):
             dp[j][0] = 1 if dp[j-1][0] == 1 else int(text2[j] == text1[0])
-        print(dp)
+
         # 3 动态方程进行求解
         for i in range(1, size2):
             for j in range(1, size1):
