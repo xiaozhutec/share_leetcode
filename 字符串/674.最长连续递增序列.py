@@ -23,5 +23,4 @@ class Solution(object):
 
 if __name__ == '__main__':
     s = Solution()
-    print(s.findLengthOfLCIS([1]))
     print(s.findLengthOfLCIS([1, 3, 5, 4, 7]))

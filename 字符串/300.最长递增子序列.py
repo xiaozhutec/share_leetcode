@@ -13,7 +13,6 @@ class Solution(object):
             for j in range(0, i):
                 if nums[i] > nums[j]:
                     dp[i] = max(dp[i], dp[j]+1)
-        print(dp)
         return max(dp)
 
 
@@ -23,6 +22,7 @@ if __name__ == '__main__':
 
 # [1, 3, 6, 7, 9, 4, 10, 5, 6]
 # [1, 2, 3, 4, 5, 3, 6,  4, 5]
+
 
 
 

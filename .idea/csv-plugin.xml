@@ -234,6 +234,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/字符串/674.最长连续递增序列.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/字符串/76.最小覆盖子串.py">
           <value>
             <Attribute>
