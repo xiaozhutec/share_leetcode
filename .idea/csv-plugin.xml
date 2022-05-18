@@ -255,6 +255,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/字符串/BM算法.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/Str_BF算法.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/Str_KMP算法.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/字符串/Str_RK算法.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/字符串/test.py">
           <value>
             <Attribute>
